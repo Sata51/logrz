@@ -1,4 +1,4 @@
-package gologrz
+package logrz
 
 //SetLevel allow user to personalize logging level
 func SetLevel(level Level) {

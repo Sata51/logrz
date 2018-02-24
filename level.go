@@ -1,4 +1,4 @@
-package gologrz
+package logrz
 
 import (
 	"fmt"
