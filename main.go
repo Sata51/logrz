@@ -113,20 +113,43 @@ func T(format string, a ...interface{}) {
 func log(ltype Level, details *runtime.Func, format string, a ...interface{}) {
 	tTime = time.Since(lastLog)
 	lastLog = time.Now()
-	var str string
-	str = fmt.Sprintf("[ %s ]", padRight(lastLog.Format("15:04:05.999"), " ", 12))
-	str = appendTypeWithColor(str, ltype)
+	dts := ""
 	if details != nil {
-		dts := strings.Split(details.Name(), "/")
-		str += fmt.Sprintf("[ %s ]", dts[len(dts)-1])
+		dtss := strings.Split(details.Name(), "/")
+		dts = fmt.Sprintf("[ %s ]", dtss[len(dtss)-1])
 	}
-	str += " > "
+	var lg = new(LogComposition)
+	lg.Time = fmt.Sprintf("[ %s ]", padRight(lastLog.Format("15:04:05.999"), " ", 12))
+	lg.Level = ltype
+	lg.Details = dts
 	if len(a) != 0 {
-		str += fmt.Sprintf(format, a...)
+		lg.Format = fmt.Sprintf(format, a...)
 	} else {
-		str += format
+		lg.Format = format
 	}
-	str += fmt.Sprintf(" +%s", tTime)
+	lg.Interval = fmt.Sprintf(" +%s", tTime)
+	formatter(lg)
+}
+
+func formatter(log *LogComposition) {
+	var str string
+	if forceFullColor {
+		str = log.Time
+		str = appendType(str, log.Level)
+		str += log.Details
+		str += " > "
+		str += log.Format
+		str += log.Interval
+		str = fullColor(str, log.Level)
+	} else {
+		str = log.Time
+		str = appendTypeWithColor(str, log.Level)
+		str += log.Details
+		str += " > "
+		str += log.Format
+		str += log.Interval
+	}
+
 	str += "\n"
 	fmt.Print(str)
 }

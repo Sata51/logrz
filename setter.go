@@ -9,3 +9,8 @@ func SetLevel(level Level) {
 func DisableColor(set bool) {
 	disableColor = set
 }
+
+//ForceFullColor allow user to force color on the entire log
+func ForceFullColor(set bool) {
+	forceFullColor = set
+}
