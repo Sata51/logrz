@@ -19,7 +19,7 @@ func init() {
 	disableColor = false
 }
 
-//F generate a fatal log format
+// F generate a fatal log format
 func F(format string, a ...interface{}) {
 	if printLevel >= FatalLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -32,7 +32,7 @@ func F(format string, a ...interface{}) {
 	}
 }
 
-//P generate a panic log format
+// P generate a panic log format
 func P(format string, a ...interface{}) {
 	if printLevel >= PanicLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -45,7 +45,7 @@ func P(format string, a ...interface{}) {
 	}
 }
 
-//E generate an error log format
+// E generate an error log format
 func E(format string, a ...interface{}) {
 	if printLevel >= ErrorLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -58,7 +58,7 @@ func E(format string, a ...interface{}) {
 	}
 }
 
-//W generate a warn log format
+// W generate a warn log format
 func W(format string, a ...interface{}) {
 	if printLevel >= WarnLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -71,7 +71,7 @@ func W(format string, a ...interface{}) {
 	}
 }
 
-//I generate an info log format
+// I generate an info log format
 func I(format string, a ...interface{}) {
 	if printLevel >= InfoLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -84,7 +84,7 @@ func I(format string, a ...interface{}) {
 	}
 }
 
-//D generate a debug log format
+// D generate a debug log format
 func D(format string, a ...interface{}) {
 	if printLevel >= DebugLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -97,7 +97,7 @@ func D(format string, a ...interface{}) {
 	}
 }
 
-//T generate a trace log format
+// T generate a trace log format
 func T(format string, a ...interface{}) {
 	if printLevel >= TraceLevel {
 		pc, _, _, ok := runtime.Caller(1)
@@ -132,24 +132,28 @@ func log(ltype Level, details *runtime.Func, format string, a ...interface{}) {
 }
 
 func formatter(log *LogComposition) {
-	var str string
+	var (
+		str      string
+		clearStr string
+	)
+	str = log.Time
 	if forceFullColor {
-		str = log.Time
 		str = appendType(str, log.Level)
 		str += log.Details
 		str += " > "
 		str += log.Format
 		str += log.Interval
+		clearStr = str
 		str = fullColor(str, log.Level)
 	} else {
-		str = log.Time
+		clearStr = appendType(str, log.Level)
 		str = appendTypeWithColor(str, log.Level)
-		str += log.Details
-		str += " > "
-		str += log.Format
-		str += log.Interval
+		str += log.Details + " > " + log.Format + log.Interval
+		clearStr += log.Details + " > " + log.Format + log.Interval
 	}
 
 	str += "\n"
+	clearStr += "\n"
+	logFile(clearStr)
 	fmt.Print(str)
 }

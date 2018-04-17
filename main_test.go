@@ -3,6 +3,7 @@ package logrz
 import "testing"
 
 func TestLogger(t *testing.T) {
+	SetUseFile(true, true, "./file.example")
 	SetLevel(TraceLevel)
 	DisableColor(true)
 	T("Start!")
@@ -13,6 +14,7 @@ func TestLogger(t *testing.T) {
 	F("Start!")
 	P("Start!")
 	DisableColor(false)
+	SetUseFile(true, false, "./file.example")
 	T("Start!")
 	D("Start!")
 	I("Start!")

@@ -1,0 +1,30 @@
+[ 23:58:24.288 ] Log start
+[ 23:58:24.289 ][ TRACE ][ logrz.TestLogger ] > Start! +287.182µs
+[ 23:58:24.289 ][ DEBUG ][ logrz.TestLogger ] > Start! +177.76µs
+[ 23:58:24.289 ][ INFO  ][ logrz.TestLogger ] > Start! +76.474µs
+[ 23:58:24.289 ][ WARN  ][ logrz.TestLogger ] > Start! +56.787µs
+[ 23:58:24.289 ][ ERROR ][ logrz.TestLogger ] > Start! +65.996µs
+[ 23:58:24.289 ][ FATAL ][ logrz.TestLogger ] > Start! +57.701µs
+[ 23:58:24.289 ][ PANIC ][ logrz.TestLogger ] > Start! +53.86µs
+[ 23:58:24.289 ] Log start
+[ 23:58:24.289 ][ TRACE ][ logrz.TestLogger ] > Start! +117.662µs
+[ 23:58:24.289 ][ DEBUG ][ logrz.TestLogger ] > Start! +93.911µs
+[ 23:58:24.289 ][ INFO  ][ logrz.TestLogger ] > Start! +107.306µs
+[ 23:58:24.289 ][ WARN  ][ logrz.TestLogger ] > Start! +66.202µs
+[ 23:58:24.29  ][ ERROR ][ logrz.TestLogger ] > Start! +71.364µs
+[ 23:58:24.29  ][ FATAL ][ logrz.TestLogger ] > Start! +59.511µs
+[ 23:58:24.29  ][ PANIC ][ logrz.TestLogger ] > Start! +69.622µs
+[ 23:58:24.29  ][ TRACE ][ logrz.TestLogger ] > Start! +84.655µs
+[ 23:58:24.29  ][ DEBUG ][ logrz.TestLogger ] > Start! +75.81µs
+[ 23:58:24.29  ][ INFO  ][ logrz.TestLogger ] > Start! +67.153µs
+[ 23:58:24.29  ][ WARN  ][ logrz.TestLogger ] > Start! +55.632µs
+[ 23:58:24.29  ][ ERROR ][ logrz.TestLogger ] > Start! +79.449µs
+[ 23:58:24.29  ][ FATAL ][ logrz.TestLogger ] > Start! +110.793µs
+[ 23:58:24.29  ][ PANIC ][ logrz.TestLogger ] > Start! +158.641µs
+[ 23:58:24.29  ][ TRACE ][ logrz.TestLogger ] > Start! +94.838µs
+[ 23:58:24.29  ][ DEBUG ][ logrz.TestLogger ] > Start! +63.14µs
+[ 23:58:24.29  ][ INFO  ][ logrz.TestLogger ] > Start! +59.524µs
+[ 23:58:24.291 ][ WARN  ][ logrz.TestLogger ] > Start! +61.943µs
+[ 23:58:24.291 ][ ERROR ][ logrz.TestLogger ] > Start! +76.124µs
+[ 23:58:24.291 ][ FATAL ][ logrz.TestLogger ] > Start! +66.962µs
+[ 23:58:24.291 ][ PANIC ][ logrz.TestLogger ] > Start! +81.966µs
