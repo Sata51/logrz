@@ -39,7 +39,7 @@ func startFileLog() {
 	)
 	f, err = os.OpenFile(filePath, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
-		E("Unable to open %s for logging purpose", filePath)
+		fmt.Printf("Unable to open %s for logging purpose", filePath)
 	}
 	defer f.Close()
 
@@ -61,7 +61,7 @@ func logFile(str string) {
 	)
 	f, err = os.OpenFile(filePath, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
-		E("Unable to open %s for logging purpose", filePath)
+		fmt.Printf("Unable to open %s for logging purpose", filePath)
 	}
 	defer f.Close()
 
