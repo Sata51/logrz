@@ -12,16 +12,3 @@ func padRight(str, pad string, lenght int) string {
 		}
 	}
 }
-
-//padLeft pad string on the left on the str if len(str)< length
-func padLeft(str, pad string, lenght int) string {
-	if len(str) >= lenght {
-		return str
-	}
-	for {
-		str = pad + str
-		if len(str) > lenght {
-			return str[0:lenght]
-		}
-	}
-}

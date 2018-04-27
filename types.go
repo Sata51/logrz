@@ -7,4 +7,5 @@ type LogComposition struct {
 	Details  string
 	Interval string
 	Format   string
+	ToStdOut bool
 }

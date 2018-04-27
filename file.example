@@ -1,30 +1,39 @@
-[ 23:58:24.288 ] Log start
-[ 23:58:24.289 ][ TRACE ][ logrz.TestLogger ] > Start! +287.182µs
-[ 23:58:24.289 ][ DEBUG ][ logrz.TestLogger ] > Start! +177.76µs
-[ 23:58:24.289 ][ INFO  ][ logrz.TestLogger ] > Start! +76.474µs
-[ 23:58:24.289 ][ WARN  ][ logrz.TestLogger ] > Start! +56.787µs
-[ 23:58:24.289 ][ ERROR ][ logrz.TestLogger ] > Start! +65.996µs
-[ 23:58:24.289 ][ FATAL ][ logrz.TestLogger ] > Start! +57.701µs
-[ 23:58:24.289 ][ PANIC ][ logrz.TestLogger ] > Start! +53.86µs
-[ 23:58:24.289 ] Log start
-[ 23:58:24.289 ][ TRACE ][ logrz.TestLogger ] > Start! +117.662µs
-[ 23:58:24.289 ][ DEBUG ][ logrz.TestLogger ] > Start! +93.911µs
-[ 23:58:24.289 ][ INFO  ][ logrz.TestLogger ] > Start! +107.306µs
-[ 23:58:24.289 ][ WARN  ][ logrz.TestLogger ] > Start! +66.202µs
-[ 23:58:24.29  ][ ERROR ][ logrz.TestLogger ] > Start! +71.364µs
-[ 23:58:24.29  ][ FATAL ][ logrz.TestLogger ] > Start! +59.511µs
-[ 23:58:24.29  ][ PANIC ][ logrz.TestLogger ] > Start! +69.622µs
-[ 23:58:24.29  ][ TRACE ][ logrz.TestLogger ] > Start! +84.655µs
-[ 23:58:24.29  ][ DEBUG ][ logrz.TestLogger ] > Start! +75.81µs
-[ 23:58:24.29  ][ INFO  ][ logrz.TestLogger ] > Start! +67.153µs
-[ 23:58:24.29  ][ WARN  ][ logrz.TestLogger ] > Start! +55.632µs
-[ 23:58:24.29  ][ ERROR ][ logrz.TestLogger ] > Start! +79.449µs
-[ 23:58:24.29  ][ FATAL ][ logrz.TestLogger ] > Start! +110.793µs
-[ 23:58:24.29  ][ PANIC ][ logrz.TestLogger ] > Start! +158.641µs
-[ 23:58:24.29  ][ TRACE ][ logrz.TestLogger ] > Start! +94.838µs
-[ 23:58:24.29  ][ DEBUG ][ logrz.TestLogger ] > Start! +63.14µs
-[ 23:58:24.29  ][ INFO  ][ logrz.TestLogger ] > Start! +59.524µs
-[ 23:58:24.291 ][ WARN  ][ logrz.TestLogger ] > Start! +61.943µs
-[ 23:58:24.291 ][ ERROR ][ logrz.TestLogger ] > Start! +76.124µs
-[ 23:58:24.291 ][ FATAL ][ logrz.TestLogger ] > Start! +66.962µs
-[ 23:58:24.291 ][ PANIC ][ logrz.TestLogger ] > Start! +81.966µs
+[ 11:17:12.555 ] Log start
+[ 11:17:12.555 ][ TRACE ][ logrz.TestLogger ] > no output  Fri, 27 Apr 2018 11:17:12 +0200 +741.16µs
+[ 11:17:12.556 ][ TRACE ][ logrz.TestLogger ] > Start! +193.211µs
+[ 11:17:12.556 ][ DEBUG ][ logrz.TestLogger ] > Start! +84.618µs
+[ 11:17:12.556 ][ INFO  ][ logrz.TestLogger ] > Start! +151.469µs
+[ 11:17:12.556 ][ WARN  ][ logrz.TestLogger ] > Start! +73.865µs
+[ 11:17:12.556 ][ ERROR ][ logrz.TestLogger ] > Start! +68.899µs
+[ 11:17:12.556 ][ FATAL ][ logrz.TestLogger ] > Start! +66.977µs
+[ 11:17:12.556 ][ PANIC ][ logrz.TestLogger ] > Start! +71.145µs
+[ 11:17:12.556 ][ TRACE ][ logrz.TestLogger ] > will output  Fri, 27 Apr 2018 11:17:12 +0200 +68.545µs
+[ 11:17:12.556 ][ TRACE ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +76.293µs
+[ 11:17:12.556 ][ DEBUG ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +80.991µs
+[ 11:17:12.556 ][ INFO  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +79.066µs
+[ 11:17:12.556 ][ WARN  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +83.584µs
+[ 11:17:12.556 ][ ERROR ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +80.145µs
+[ 11:17:12.557 ][ FATAL ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +88.084µs
+[ 11:17:12.557 ][ PANIC ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +85.171µs
+[ 11:17:12.557 ] Log start
+[ 11:17:12.557 ][ TRACE ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +264.932µs
+[ 11:17:12.557 ][ DEBUG ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +82.616µs
+[ 11:17:12.557 ][ INFO  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +78.334µs
+[ 11:17:12.557 ][ WARN  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +83.314µs
+[ 11:17:12.557 ][ ERROR ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +87.899µs
+[ 11:17:12.557 ][ FATAL ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +94.964µs
+[ 11:17:12.557 ][ PANIC ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +86.866µs
+[ 11:17:12.558 ][ TRACE ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +178.057µs
+[ 11:17:12.558 ][ DEBUG ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +99.078µs
+[ 11:17:12.558 ][ INFO  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +157.261µs
+[ 11:17:12.558 ][ WARN  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +93.451µs
+[ 11:17:12.558 ][ ERROR ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +77.948µs
+[ 11:17:12.558 ][ FATAL ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +90.7µs
+[ 11:17:12.558 ][ PANIC ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +79.09µs
+[ 11:17:12.558 ][ TRACE ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +83.458µs
+[ 11:17:12.558 ][ DEBUG ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +78.523µs
+[ 11:17:12.558 ][ INFO  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +82.863µs
+[ 11:17:12.559 ][ WARN  ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +79.081µs
+[ 11:17:12.559 ][ ERROR ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +79.494µs
+[ 11:17:12.559 ][ FATAL ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +76.673µs
+[ 11:17:12.559 ][ PANIC ][ logrz.TestLogger ] > Start! Fri, 27 Apr 2018 11:17:12 +0200 +78.152µs

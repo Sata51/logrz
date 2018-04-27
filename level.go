@@ -30,7 +30,7 @@ func (level Level) String() string {
 	return "unknown"
 }
 
-// ParseLevel takes a string level and returns the Logrus log level constant.
+// ParseLevel takes a string level and returns the logrz log level constant.
 func ParseLevel(lvl string) (Level, error) {
 	switch strings.ToUpper(lvl) {
 	case "PANIC":
@@ -50,7 +50,7 @@ func ParseLevel(lvl string) (Level, error) {
 	}
 
 	var l Level
-	return l, fmt.Errorf("not a valid logrus Level: %q", lvl)
+	return l, fmt.Errorf("not a valid logrz Level: %q", lvl)
 }
 
 //AllLevels A constant exposing all logging levels
@@ -65,7 +65,7 @@ var AllLevels = []Level{
 }
 
 // These are the different logging levels. You can set the logging level to log
-// on your instance of logger, obtained with `logrus.New()`.
+// on your instance of logger, obtained with `logrz.New()`.
 const (
 	// PanicLevel level, highest level of severity. Logs and then calls panic with the
 	// message passed to Debug, Info, ...
