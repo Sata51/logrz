@@ -61,11 +61,13 @@ func logFile(str string) {
 	)
 	f, err = os.OpenFile(filePath, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
-		fmt.Printf("Unable to open %s for logging purpose", filePath)
+		return
+		//fmt.Printf("Unable to open %s for logging purpose", filePath)
 	}
 	defer f.Close()
 
 	if _, err = f.WriteString(str); err != nil {
-		fmt.Printf("Unable to write in file")
+		return
+		//fmt.Printf("Unable to write in file")
 	}
 }
