@@ -64,7 +64,6 @@ func formatter(log *LogComposition) {
 
 	str += "\n"
 	clearStr += "\n"
-	logFile(clearStr)
 	if log.ToStdOut {
 		fmt.Print(str)
 	}

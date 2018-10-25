@@ -14,18 +14,3 @@ func DisableColor(set bool) {
 func ForceFullColor(set bool) {
 	forceFullColor = set
 }
-
-//SetUseFile set file usage for log
-func SetUseFile(use, flush bool, set string) {
-	useFile = use
-	if useFile {
-		filePath = set
-		ensureFile()
-		if flush {
-			flushFile()
-		}
-		startFileLog()
-	} else {
-		filePath = ""
-	}
-}
