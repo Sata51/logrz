@@ -19,7 +19,7 @@ func init() {
 	disableColor = false
 }
 
-func log(ltype Level, ToStd bool, details *runtime.Func, format string, a ...interface{}) {
+func log(ltype Level, details *runtime.Func, format string, a ...interface{}) {
 	tTime = time.Since(lastLog)
 	lastLog = time.Now()
 	dts := ""
@@ -28,7 +28,6 @@ func log(ltype Level, ToStd bool, details *runtime.Func, format string, a ...int
 		dts = fmt.Sprintf("[ %s ]", dtss[len(dtss)-1])
 	}
 	var lg = new(LogComposition)
-	lg.ToStdOut = ToStd
 	lg.Time = fmt.Sprintf("[ %s ]", padRight(lastLog.Format("15:04:05.999"), " ", 12))
 	lg.Level = ltype
 	lg.Details = dts
@@ -42,29 +41,15 @@ func log(ltype Level, ToStd bool, details *runtime.Func, format string, a ...int
 }
 
 func formatter(log *LogComposition) {
-	var (
-		str      string
-		clearStr string
-	)
-	str = log.Time
+	str := log.Time
 	if forceFullColor {
 		str = appendType(str, log.Level)
-		str += log.Details
-		str += " > "
-		str += log.Format
-		str += log.Interval
-		clearStr = str
+		str += log.Details + " > " + log.Format + log.Interval
 		str = fullColor(str, log.Level)
 	} else {
-		clearStr = appendType(str, log.Level)
 		str = appendTypeWithColor(str, log.Level)
 		str += log.Details + " > " + log.Format + log.Interval
-		clearStr += log.Details + " > " + log.Format + log.Interval
 	}
-
 	str += "\n"
-	clearStr += "\n"
-	if log.ToStdOut {
-		fmt.Print(str)
-	}
+	fmt.Print(str)
 }
