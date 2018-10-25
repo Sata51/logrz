@@ -40,12 +40,5 @@ func main() {
 
 	//Force the entire line to be colorized
 	logrz.ForceFullColor(bool)
-
-	//Set the log file usage
-	//If the flush flag is true, the file will be cleaned at each run
-	//each call of this func with the use set to true will trigger a new line in the log file like:
-	//[ 23:58:24.289 ] Log start
-	logrz.SetUseFile(use bool, flush bool, filePath string)
-
 }
 ```
