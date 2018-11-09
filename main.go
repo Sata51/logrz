@@ -28,7 +28,7 @@ func log(ltype Level, details *runtime.Func, format string, a ...interface{}) {
 		dts = fmt.Sprintf("[ %s ]", dtss[len(dtss)-1])
 	}
 	var lg = new(LogComposition)
-	lg.Time = fmt.Sprintf("[ %s ]", padRight(lastLog.Format("15:04:05.999"), " ", 12))
+	lg.Time = fmt.Sprintf("[ %s ]", padRight(lastLog.Format("15:04:05.000"), " ", 12))
 	lg.Level = ltype
 	lg.Details = dts
 	if len(a) != 0 {
